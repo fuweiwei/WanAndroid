@@ -1,2 +1,3 @@
+include ':libcore'
 include ':app'
 rootProject.name = "VCoroutines"
