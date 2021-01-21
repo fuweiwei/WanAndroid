@@ -21,7 +21,9 @@ android {
             }
         }
     }
-
+    buildFeatures {
+        dataBinding = true
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -38,13 +40,16 @@ android {
 }
 
 dependencies {
-
     implementation Dependencies.kotlinStdlib
     implementation Dependencies.coreKtx
     implementation Dependencies.appcompat
     implementation Dependencies.material
+    implementation Dependencies.utilcodex
     implementation Dependencies.constraintlayout
-    testImplementation Dependencies.junit
-    androidTestImplementation Dependencies.test_runner
-    androidTestImplementation Dependencies.test_espresso
+    implementation Dependencies.kotlin_coroutines
+    implementation Dependencies.lifecycle_livedata
+    implementation Dependencies.lifecycle_process
+    implementation Dependencies.lifecycle_runtime
+    implementation Dependencies.lifecycle_viewmodel
+    implementation project(path: Dependencies.libnet)
 }

@@ -18,7 +18,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    dataBinding{
+        enabled = true
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -33,7 +35,6 @@ android {
         jvmTarget = '1.8'
     }
 }
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation Dependencies.kotlinStdlib
@@ -47,6 +48,7 @@ dependencies {
     implementation Dependencies.lifecycle_process
     implementation Dependencies.lifecycle_runtime
     implementation Dependencies.lifecycle_viewmodel
+    implementation Dependencies.baseRecyclerViewAdapterHelper
     implementation project(path: Dependencies.libnet)
     implementation project(path: Dependencies.libcore)
 }

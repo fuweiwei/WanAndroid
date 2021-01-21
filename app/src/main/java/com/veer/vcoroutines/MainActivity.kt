@@ -1,20 +1,27 @@
 package com.veer.vcoroutines
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import androidx.lifecycle.ViewModelProvider
-import com.blankj.utilcode.util.Utils
+import com.veer.libcore.base.BaseVmActivity
+import com.veer.vcoroutines.databinding.ActivityMainBinding
+
 /**
  * <li>Package: com.veer.vcoroutines</li>
  * <li>Author: Veer</li>
  * <li>Date:  2021/1/21</li>
  * <li>Description: </li>
  */
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val mainViewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        mainViewModel.mainTest()
+class MainActivity : BaseVmActivity<MainViewModel,ActivityMainBinding>() {
+    override fun layoutRes(): Int {
+        return R.layout.activity_main
+    }
+
+    override fun initData() {
+        super.initData()
+        mViewModel.content.set("11111")
+        mViewModel.mainTest()
+
+    }
+
+    override fun initVariableId(): Int {
+            return BR.data
     }
 }

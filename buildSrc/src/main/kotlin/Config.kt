@@ -34,7 +34,6 @@ object Versions {
     const val retrofitVersion = "2.9.0"
     const val retrofit_converter_gson = "2.6.2"
     const val okHttpVersion = "4.9.0"
-    const val moshiVersion = "1.11.0"
     const val PersistentCookieJarVersion = "v1.0.1"
 
     const val coilVersion = "1.0.0"
@@ -88,9 +87,6 @@ object Dependencies {
     const val retrofit =  "com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}"
     const val retrofit_converter_gson = "com.squareup.retrofit2:converter-gson:${Versions.retrofitVersion}"
     const val PersistentCookieJar = "com.github.franmontiel:PersistentCookieJar:${Versions.PersistentCookieJarVersion}"
-
-    const val moshi =  "com.squareup.moshi:moshi:${Versions.moshiVersion}"
-    const val moshi_kotlin =  "com.squareup.moshi:moshi-kotlin:${Versions.moshiVersion}"
 
     const val coil =  "io.coil-kt:coil:${Versions.coilVersion}"
     const val oil_gif =  "io.coil-kt:coil-gif:${Versions.coilVersion}"

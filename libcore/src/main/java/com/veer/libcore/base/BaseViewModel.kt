@@ -1,11 +1,11 @@
-package com.veer.vcoroutines.base
+package com.veer.libcore.base
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.blankj.utilcode.util.ToastUtils
+import com.veer.libcore.R
 import com.veer.libnet.api.ApiException
-import com.veer.vcoroutines.R
 import kotlinx.coroutines.*
 import retrofit2.HttpException
 import java.net.ConnectException
