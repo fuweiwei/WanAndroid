@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">VCoroutines</string>
+    <string name="network_connection_failed">网络连接失败</string>
+    <string name="network_request_failed">网络请求失败</string>
+    <string name="network_request_timeout">网络请求超时</string>
+    <string name="api_data_parse_error">数据解析错误</string>
 </resources>
