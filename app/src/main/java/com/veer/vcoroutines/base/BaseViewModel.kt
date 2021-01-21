@@ -4,10 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.blankj.utilcode.util.ToastUtils
-import com.squareup.moshi.JsonDataException
-import com.squareup.moshi.JsonEncodingException
 import com.veer.libnet.api.ApiException
-import com.veer.libnet.api.RetrofitClient
 import com.veer.vcoroutines.R
 import kotlinx.coroutines.*
 import retrofit2.HttpException
@@ -84,7 +81,6 @@ open class BaseViewModel : ViewModel() {
             is ApiException -> {
                 when (e.code) {
                     -1001 -> {
-                        RetrofitClient.clearCookie()
                         loginStatusInvalid.value = true
                     }
                     // 其他api错误
@@ -100,9 +96,6 @@ open class BaseViewModel : ViewModel() {
             is HttpException,
             is SSLHandshakeException ->
                 if (showErrorToast)  ToastUtils.showShort(R.string.network_request_failed)
-            // 数据解析错误
-            is JsonDataException, is JsonEncodingException ->
-                if (showErrorToast)  ToastUtils.showShort(R.string.api_data_parse_error)
             // 其他错误
             else ->
                 if (showErrorToast)  ToastUtils.showShort(e.message ?: return)

@@ -1,7 +1,7 @@
 package com.veer.vcoroutines
 
 import com.blankj.utilcode.util.ToastUtils
-import com.veer.libnet.api.RetrofitClient
+import com.veer.libnet.api.VRetrofitClient
 import com.veer.vcoroutines.base.BaseViewModel
 
 /**
@@ -12,7 +12,7 @@ import com.veer.vcoroutines.base.BaseViewModel
  */
 class MainViewModel:BaseViewModel(){
     suspend fun test() =
-        RetrofitClient.apiService.getProjectCategories().apiData()
+        VRetrofitClient.service.getProjectCategories().apiData()
     fun mainTest(){
         launch(
             block = {

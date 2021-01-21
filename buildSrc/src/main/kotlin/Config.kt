@@ -32,6 +32,7 @@ object Versions {
     const val roomVersion = "2.2.5"
 
     const val retrofitVersion = "2.9.0"
+    const val retrofit_converter_gson = "2.6.2"
     const val okHttpVersion = "4.9.0"
     const val moshiVersion = "1.11.0"
     const val PersistentCookieJarVersion = "v1.0.1"
@@ -51,20 +52,22 @@ object Versions {
 }
 
 object Dependencies {
-    const val kotlinStdlib =  "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlinVersion}"
-    const val kotlin_coroutines =  "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutinesVersion}"
-    const val coreKtx =  "androidx.core:core-ktx:${Versions.coreVersion}"
+
+
     const val junit =   "junit:junit:${Versions.junitVersion}"
     const val test_runner =  "com.android.support.test:runner:${Versions.runnerVersion}"
     const val test_espresso =   "com.android.support.test.espresso:espresso-core:${Versions.espressoVersion}"
 
+    //kotlin
+    const val kotlinStdlib =  "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlinVersion}"
+    const val kotlin_coroutines =  "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutinesVersion}"
+    const val coreKtx =  "androidx.core:core-ktx:${Versions.coreVersion}"
+
+    //androidx
     const val material =  "com.google.android.material:material:${Versions.materialVersion}"
-
-
     const val appcompat =  "androidx.appcompat:appcompat:${Versions.appCompatVersion}"
     const val activityKtx =  "androidx.activity:activity-ktx:${Versions.activityVersion}"
     const val fragmentKtx =  "androidx.fragment:fragment-ktx:${Versions.fragmentVersion}"
-
     const val constraintlayout =  "androidx.constraintlayout:constraintlayout:${Versions.constraintLayoutVersion}"
     const val coordinatorlayout =  "androidx.coordinatorlayout:coordinatorlayout:${Versions.coordinatorLayoutVersion}"
     const val swiperefreshlayout =  "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipeRefreshLayoutVersion}"
@@ -79,10 +82,12 @@ object Dependencies {
     const val room_ktx =  "androidx.room:room-ktx:${Versions.roomVersion}"
     const val room_compiler =  "androidx.room:room-compiler:${Versions.roomVersion}"
 
+    // network
     const val okhttp =  "com.squareup.okhttp3:okhttp:${Versions.okHttpVersion}"
     const val okhttp_interceptor =  "com.squareup.okhttp3:logging-interceptor:${Versions.okHttpVersion}"
     const val retrofit =  "com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}"
-    const val retrofit_converter =  "com.squareup.retrofit2:converter-moshi:${Versions.retrofitVersion}"
+    const val retrofit_converter_gson = "com.squareup.retrofit2:converter-gson:${Versions.retrofitVersion}"
+    const val PersistentCookieJar = "com.github.franmontiel:PersistentCookieJar:${Versions.PersistentCookieJarVersion}"
 
     const val moshi =  "com.squareup.moshi:moshi:${Versions.moshiVersion}"
     const val moshi_kotlin =  "com.squareup.moshi:moshi-kotlin:${Versions.moshiVersion}"
@@ -92,13 +97,12 @@ object Dependencies {
     const val oil_svg =  "io.coil-kt:coil-svg:${Versions.coilVersion}"
     const val oil_video =  "io.coil-kt:coil-video:${Versions.coilVersion}"
 
+    //third工具
     const val baseRecyclerViewAdapterHelper =  "com.github.CymChad:BaseRecyclerViewAdapterHelper:${Versions.brvhaVersion}"
-
     const val flowlayout =  "com.hyman:flowlayout-lib:${Versions.flowLayoutVersion}"
     const val agentweb =  "com.just.agentweb:agentweb:${Versions.agentWebVersion}"
     const val banner =  "com.youth.banner:banner:${Versions.bannerVersion}"
     const val utilcodex =  "com.blankj:utilcodex:${Versions.utilcodexVersion}"
-    const val PersistentCookieJar = "com.github.franmontiel:PersistentCookieJar:${Versions.PersistentCookieJarVersion}"
 
 
     const val libnet =  ":libnet"

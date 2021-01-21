@@ -1,4 +1,4 @@
-package com.veer.libnet.core
+package com.veer.libnet.interceptor
 
 import android.util.Log
 import okhttp3.Interceptor

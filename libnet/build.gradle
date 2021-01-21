@@ -46,11 +46,9 @@ dependencies {
     implementation Dependencies.material
     implementation Dependencies.constraintlayout
     api Dependencies.retrofit
-    api Dependencies.retrofit_converter
+    api Dependencies.retrofit_converter_gson
     api Dependencies.okhttp
     api Dependencies.okhttp_interceptor
-    api Dependencies.moshi
-    api Dependencies.moshi_kotlin
     api Dependencies.PersistentCookieJar
     implementation Dependencies.utilcodex
 }
