@@ -1,6 +1,6 @@
 object Versions {
     const val gradleVersion = "4.1.1"
-    const val kotlinVersion = "1.4.20"
+    const val kotlinVersion = "1.3.72"
 
     const val coroutinesVersion = "1.4.2"
 
@@ -21,6 +21,7 @@ object Versions {
     const val coreVersion = "1.3.2"
     const val activityVersion = "1.1.0"
     const val fragmentVersion = "1.2.5"
+    const val collectionVersion = "1.1.0"
     const val appCompatVersion = "1.2.0"
 
     const val constraintLayoutVersion = "2.0.4"
@@ -35,8 +36,6 @@ object Versions {
     const val retrofit_converter_gson = "2.6.2"
     const val okHttpVersion = "4.9.0"
     const val PersistentCookieJarVersion = "v1.0.1"
-
-    const val coilVersion = "1.0.0"
 
     const val brvhaVersion = "3.0.6"
 
@@ -60,22 +59,27 @@ object Dependencies {
     //kotlin
     const val kotlinStdlib =  "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlinVersion}"
     const val kotlin_coroutines =  "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutinesVersion}"
-    const val coreKtx =  "androidx.core:core-ktx:${Versions.coreVersion}"
 
-    //androidx
-    const val material =  "com.google.android.material:material:${Versions.materialVersion}"
-    const val appcompat =  "androidx.appcompat:appcompat:${Versions.appCompatVersion}"
+    //jetpack
+    const val coreKtx =  "androidx.core:core-ktx:${Versions.coreVersion}"
     const val activityKtx =  "androidx.activity:activity-ktx:${Versions.activityVersion}"
     const val fragmentKtx =  "androidx.fragment:fragment-ktx:${Versions.fragmentVersion}"
-    const val constraintlayout =  "androidx.constraintlayout:constraintlayout:${Versions.constraintLayoutVersion}"
-    const val coordinatorlayout =  "androidx.coordinatorlayout:coordinatorlayout:${Versions.coordinatorLayoutVersion}"
-    const val swiperefreshlayout =  "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipeRefreshLayoutVersion}"
-    const val recyclerview =  "androidx.recyclerview:recyclerview:${Versions.recyclerViewVersion}"
+    const val collectionKtx = "androidx.collection:collection-ktx:${Versions.collectionVersion}"
+
 
     const val lifecycle_process =  "androidx.lifecycle:lifecycle-process:${Versions.lifecycleVersion}"
     const val lifecycle_runtime =  "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleVersion}"
     const val lifecycle_viewmodel =  "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleVersion}"
     const val lifecycle_livedata =  "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycleVersion}"
+
+    //androidx
+    const val material =  "com.google.android.material:material:${Versions.materialVersion}"
+    const val appcompat =  "androidx.appcompat:appcompat:${Versions.appCompatVersion}"
+    const val constraintlayout =  "androidx.constraintlayout:constraintlayout:${Versions.constraintLayoutVersion}"
+    const val coordinatorlayout =  "androidx.coordinatorlayout:coordinatorlayout:${Versions.coordinatorLayoutVersion}"
+    const val swiperefreshlayout =  "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipeRefreshLayoutVersion}"
+    const val recyclerview =  "androidx.recyclerview:recyclerview:${Versions.recyclerViewVersion}"
+
 
     const val room_runtime =  "androidx.room:room-runtime:${Versions.roomVersion}"
     const val room_ktx =  "androidx.room:room-ktx:${Versions.roomVersion}"
@@ -88,10 +92,6 @@ object Dependencies {
     const val retrofit_converter_gson = "com.squareup.retrofit2:converter-gson:${Versions.retrofitVersion}"
     const val PersistentCookieJar = "com.github.franmontiel:PersistentCookieJar:${Versions.PersistentCookieJarVersion}"
 
-    const val coil =  "io.coil-kt:coil:${Versions.coilVersion}"
-    const val oil_gif =  "io.coil-kt:coil-gif:${Versions.coilVersion}"
-    const val oil_svg =  "io.coil-kt:coil-svg:${Versions.coilVersion}"
-    const val oil_video =  "io.coil-kt:coil-video:${Versions.coilVersion}"
 
     //third工具
     const val baseRecyclerViewAdapterHelper =  "com.github.CymChad:BaseRecyclerViewAdapterHelper:${Versions.brvhaVersion}"

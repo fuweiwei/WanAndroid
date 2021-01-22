@@ -44,7 +44,6 @@ dependencies {
     implementation Dependencies.coreKtx
     implementation Dependencies.appcompat
     implementation Dependencies.material
-    implementation Dependencies.utilcodex
     implementation Dependencies.constraintlayout
     implementation Dependencies.kotlin_coroutines
     implementation Dependencies.lifecycle_livedata

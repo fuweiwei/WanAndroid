@@ -47,11 +47,10 @@ dependencies {
     implementation Dependencies.coreKtx
     implementation Dependencies.appcompat
     implementation Dependencies.material
-    implementation Dependencies.constraintlayout
     api Dependencies.retrofit
     api Dependencies.retrofit_converter_gson
     api Dependencies.okhttp
     api Dependencies.okhttp_interceptor
     api Dependencies.PersistentCookieJar
-    implementation Dependencies.utilcodex
+    api Dependencies.utilcodex
 }
